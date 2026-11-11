@@ -1,0 +1,11 @@
+<?php
+$input = file_get_contents('php://input');
+$data  = json_decode($input, true);
+
+if ($data) {
+    echo "Username: " . htmlspecialchars($data['username']) . "\n";
+    echo "Password: " . htmlspecialchars($data['password']) . "\n";
+} else {
+    echo "No JSON received.";
+}
+?>
