@@ -1,0 +1,10 @@
+<?php
+$student = [
+    "name"   => "Joefhem G. Bulquerin",
+    "age"    => 21,
+    "course" => "BSIT"
+];
+
+$json = json_encode($student);
+echo $json;
+?>
